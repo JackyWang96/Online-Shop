@@ -1114,6 +1114,13 @@ a:focus {
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
+
+.project{
+  text-align: center;
+  font-size: 16px;
+  color: #008B8B;
+  font-weight: bold;
+}
 figure {
   margin: 0;
 }
@@ -1127,7 +1134,7 @@ img {
 .carousel-inner > .item > a > img {
   display: block;
   max-width: 100%;
-  height: auto;
+  height: 220px;
 }
 .img-rounded {
   border-radius: 6px;
