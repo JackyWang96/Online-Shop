@@ -36,6 +36,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectId" id="2OreznvfMeSRNs6VxnmzlwhVmgm" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -93,7 +96,7 @@
       <workItem from="1683479953356" duration="6627000" />
       <workItem from="1683680045379" duration="5917000" />
       <workItem from="1684281878838" duration="6582000" />
-      <workItem from="1684406573249" duration="1333000" />
+      <workItem from="1684406573249" duration="6768000" />
     </task>
     <task id="LOCAL-00001" summary="Create the new shopping website by react">
       <created>1682441192876</created>
