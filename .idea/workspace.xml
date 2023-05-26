@@ -5,16 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="427b0d9c-bd59-4bc9-8ede-914abe21b572" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/shopping-bag.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/cart-dropdown/cart-dropdown.style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/cart-icon/cart-icon.component.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/cart-icon/cart-icon.style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/contexts/cart.context.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/cart-item.component/cart-item.component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/cart-item.component/cart-item.styles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/checkout-item/checkout-item.component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/checkout-item/checkout-item.styles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/checkout/checkout.component.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/checkout/checkout.styles.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/contexts/car.context.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart-dropdown/cart-dropdown.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/contexts/product.context.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/contexts/product.context.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/navigation/navigation.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/navigation/navigation.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/cart-dropdown/cart-dropdown.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart-dropdown/cart-dropdown.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/cart-icon/cart-icon.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart-icon/cart-icon.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/category-item/category-item.styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/category-item/category-item.styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/directory/directory.styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/directory/directory.styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/product-card/product-card.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/product-card/product-card.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/product-card/product-card.styless.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/product-card/product-card.styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/contexts/cart.context.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/contexts/cart.context.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +120,9 @@
       <workItem from="1684430484313" duration="369000" />
       <workItem from="1684753153568" duration="343000" />
       <workItem from="1684799028041" duration="5525000" />
-      <workItem from="1684836598974" duration="3027000" />
+      <workItem from="1684836598974" duration="8336000" />
+      <workItem from="1684909586451" duration="205000" />
+      <workItem from="1684923343709" duration="12514000" />
     </task>
     <task id="LOCAL-00001" summary="Create the new shopping website by react">
       <created>1682441192876</created>
@@ -181,5 +191,17 @@
     <MESSAGE value="Create the new shopping website by react" />
     <MESSAGE value="Create new log in component" />
     <option name="LAST_COMMIT_MESSAGE" value="Create new log in component" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/cart-dropdown/cart-dropdown.component.jsx</url>
+          <line>19</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
