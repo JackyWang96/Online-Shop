@@ -4,25 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="427b0d9c-bd59-4bc9-8ede-914abe21b572" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/cart-item.component/cart-item.component.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/cart-item.component/cart-item.styles.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/checkout-item/checkout-item.component.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/checkout-item/checkout-item.styles.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/checkout/checkout.component.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/checkout/checkout.styles.scss" afterDir="false" />
+    <list default="true" id="427b0d9c-bd59-4bc9-8ede-914abe21b572" name="Changes" comment="Create new log in component">
+      <change afterPath="$PROJECT_DIR$/src/components/test/test.componet.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/cart-dropdown/cart-dropdown.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart-dropdown/cart-dropdown.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/cart-icon/cart-icon.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart-icon/cart-icon.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/category-item/category-item.styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/category-item/category-item.styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/directory/directory.styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/directory/directory.styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/product-card/product-card.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/product-card/product-card.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/product-card/product-card.styless.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/product-card/product-card.styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/contexts/cart.context.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/contexts/cart.context.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/test/test.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +23,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -88,6 +79,7 @@
       <recent name="$PROJECT_DIR$/src/assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/routes" />
       <recent name="$PROJECT_DIR$/src/assets" />
       <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src" />
@@ -95,12 +87,12 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="test.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/test/test.js" working-dir="$PROJECT_DIR$/src/test">
+    <configuration name="test.jsx" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/routes/test/test.jsx" working-dir="$PROJECT_DIR$/src/routes/test">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.test.js" />
+        <item itemvalue="Node.js.test.jsx" />
       </list>
     </recent_temporary>
   </component>
@@ -122,7 +114,11 @@
       <workItem from="1684799028041" duration="5525000" />
       <workItem from="1684836598974" duration="8336000" />
       <workItem from="1684909586451" duration="205000" />
-      <workItem from="1684923343709" duration="12514000" />
+      <workItem from="1684923343709" duration="12914000" />
+      <workItem from="1685343381084" duration="241000" />
+      <workItem from="1685434451964" duration="2313000" />
+      <workItem from="1685954999680" duration="253000" />
+      <workItem from="1686011451160" duration="4189000" />
     </task>
     <task id="LOCAL-00001" summary="Create the new shopping website by react">
       <created>1682441192876</created>
@@ -155,7 +151,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/master" />
+                        <option value="HEAD" />
                       </list>
                     </value>
                   </entry>
@@ -171,6 +167,11 @@
         <entry key="Branch">
           <value>
             <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
               <RecentGroup>
                 <option name="FILTER_VALUES">
                   <option value="origin/master" />
@@ -191,17 +192,5 @@
     <MESSAGE value="Create the new shopping website by react" />
     <MESSAGE value="Create new log in component" />
     <option name="LAST_COMMIT_MESSAGE" value="Create new log in component" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/cart-dropdown/cart-dropdown.component.jsx</url>
-          <line>19</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
