@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="427b0d9c-bd59-4bc9-8ede-914abe21b572" name="Changes" comment="Create Quality and remove function">
+    <list default="true" id="427b0d9c-bd59-4bc9-8ede-914abe21b572" name="Changes" comment="Create checkout function">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/checkout-item/checkout-item.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/checkout-item/checkout-item.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/checkout/checkout.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/checkout/checkout.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/contexts/product.context.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/contexts/product.context.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shop-data.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/shop-data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/firebase/firebase.utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/firebase/firebase.utils.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +119,7 @@
       <workItem from="1685434451964" duration="2313000" />
       <workItem from="1685954999680" duration="253000" />
       <workItem from="1686011451160" duration="4189000" />
-      <workItem from="1686294495058" duration="4618000" />
+      <workItem from="1686294495058" duration="6190000" />
     </task>
     <task id="LOCAL-00001" summary="Create the new shopping website by react">
       <created>1682441192876</created>
@@ -141,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686296472804</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Create checkout function">
+      <created>1686726038969</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1686726038970</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,6 +207,7 @@
     <MESSAGE value="Create the new shopping website by react" />
     <MESSAGE value="Create new log in component" />
     <MESSAGE value="Create Quality and remove function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create Quality and remove function" />
+    <MESSAGE value="Create checkout function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create checkout function" />
   </component>
 </project>
