@@ -4,22 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="427b0d9c-bd59-4bc9-8ede-914abe21b572" name="Changes" comment="Create firestorm configuration">
-      <change afterPath="$PROJECT_DIR$/src/components/category-preview/category-preview.component.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/category-preview/category-preview.styles.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/categories-preview/categories-preview.component.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/category/category.component.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/category/category.styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+    <list default="true" id="427b0d9c-bd59-4bc9-8ede-914abe21b572" name="Changes" comment="created nested routes for shop">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/directory/directory.styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/directory/directory.styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/contexts/product.context.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/contexts/categories.context.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/category-item/category-item.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/category-item/category-item.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/category-item/category-item.styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/category-item/category-item.styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/category-preview/category-preview.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/category-preview/category-preview.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/directory/directory.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/directory/directory.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/product-card/product-card.styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/product-card/product-card.styles.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/shop/shop.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/shop/shop.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/shop/shop.styless.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/shop/shop.styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/firebase/firebase.utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/firebase/firebase.utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/categories-preview/categories-preview.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/categories-preview/categories-preview.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/category/category.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/category/category.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/home/home.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/home/home.component.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,22 +68,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/zeyuwang/Desktop/JS notes/my-app/public",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "settings.typescriptcompiler",
-    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/zeyuwang/Desktop/JS notes/my-app/public&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.web.browsers&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public" />
@@ -100,8 +98,8 @@
       <recent name="$PROJECT_DIR$/src/components/category-item" />
     </key>
   </component>
-  <component name="RunManager" selected="Cypress.src/routes/shop/shop.component.jsx">
-    <configuration name="src/routes/shop/shop.component.jsx" type="CypressConfigurationType" factoryName="Cypress" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+  <component name="RunManager" selected="npm.start">
+    <configuration name="src/routes/shop/shop.component.jsx" type="CypressConfigurationType" factoryName="Cypress" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <option name="allowRunningInParallel" value="false" />
       <option name="envs">
         <map />
@@ -134,6 +132,9 @@
     <configuration name="OnilneShop" type="JavascriptDebugType" uri="http://localhost:3000/" useFirstLineBreakpoints="true">
       <method v="2" />
     </configuration>
+    <configuration name="localhost:3000" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
     <configuration name="Debug" type="NodeJSConfigurationType" path-to-js-file="test.jsx" working-dir="$PROJECT_DIR$/src/routes/test">
       <method v="2" />
     </configuration>
@@ -150,12 +151,13 @@
     <list>
       <item itemvalue="Cypress.src/routes/shop/shop.component.jsx" />
       <item itemvalue="JavaScript Debug.OnilneShop" />
+      <item itemvalue="JavaScript Debug.localhost:3000" />
       <item itemvalue="Node.js.Debug" />
       <item itemvalue="npm.start" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Cypress.src/routes/shop/shop.component.jsx" />
+        <item itemvalue="JavaScript Debug.localhost:3000" />
       </list>
     </recent_temporary>
   </component>
@@ -182,7 +184,8 @@
       <workItem from="1685434451964" duration="2313000" />
       <workItem from="1685954999680" duration="253000" />
       <workItem from="1686011451160" duration="4189000" />
-      <workItem from="1686294495058" duration="21834000" />
+      <workItem from="1686294495058" duration="30461000" />
+      <workItem from="1687083624200" duration="6473000" />
     </task>
     <task id="LOCAL-00001" summary="Create the new shopping website by react">
       <created>1682441192876</created>
@@ -219,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686761842817</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="created nested routes for shop">
+      <created>1686848889763</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1686848889764</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,16 +289,16 @@
     <MESSAGE value="Create Quality and remove function" />
     <MESSAGE value="Create checkout function" />
     <MESSAGE value="Create firestorm configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create firestorm configuration" />
+    <MESSAGE value="created nested routes for shop" />
+    <option name="LAST_COMMIT_MESSAGE" value="created nested routes for shop" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/index.js</url>
+          <url>file://$PROJECT_DIR$/src/App.js</url>
           <line>14</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="12" />
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -19,11 +19,13 @@ const Category = () => {
     return (
         <Fragment>
             <h2 className='category-title'>{category.toUpperCase()}</h2>
-            <div className='category-container'>
+            <div className='category-preview-container'>
+                <div className="preview">
                 {products &&
                     products.map((product) => (
                         <ProductCard key={product.id} product={product} />
                     ))}
+                </div>
             </div>
         </Fragment>
     );
