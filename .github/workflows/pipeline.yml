@@ -45,38 +45,38 @@ jobs:
                      -w /usr/src/app node:${{ env.NODE_VERSION }} \
                      bash -c "npm install && npm test && npm run build"
 
-      - name: Upload test results
-        if: always()
-        uses: actions/upload-artifact@v3
-        with:
-            name: test-results
-            path: '**/TEST-*.xml'
+#       - name: Upload test results
+#         if: always()
+#         uses: actions/upload-artifact@v3
+#         with:
+#             name: test-results
+#             path: '**/TEST-*.xml'
 
 
 
-    publishTestResults:
-      name: Publish Test Results
-      runs-on: ubuntu-22.04
+#     publishTestResults:
+#       name: Publish Test Results
+#       runs-on: ubuntu-22.04
 
-      needs: [ buildAndTest ]
-      if:
-        always()
+#       needs: [ buildAndTest ]
+#       if:
+#         always()
 
-      steps:
-        - name: Check out the current branch
-          uses: actions/checkout@v3
+#       steps:
+#         - name: Check out the current branch
+#           uses: actions/checkout@v3
 
-        - name: Download test results
-          uses: actions/download-artifact@v3
-          with:
-            name: test-results
+#         - name: Download test results
+#           uses: actions/download-artifact@v3
+#           with:
+#             name: test-results
 
-        - name: Display test results summary
-          uses: dorny/test-reporter@v1.6.0
-          with:
-            name: Test Results
-            path: '**/TEST-*.xml'
-            reporter: Mocha
+#         - name: Display test results summary
+#           uses: dorny/test-reporter@v1.6.0
+#           with:
+#             name: Test Results
+#             path: '**/TEST-*.xml'
+#             reporter: Mocha
 
 
     buildAndPush:
