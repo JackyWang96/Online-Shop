@@ -6,10 +6,10 @@ on:
       - '**'
     paths-ignore:
       - 'README.md'
-    pull_request:
-      branches: [ "main" ]
-      paths-ignore:
-        - 'README.md'
+  pull_request:
+    branches: [ "main" ]
+    paths-ignore:
+      - 'README.md'
 
 env:
   NODE_VERSION: '20.1.0'
@@ -79,65 +79,60 @@ jobs:
 #             reporter: Mocha
 
 
-    buildAndPush:
-      name: Build and Push the Image
-      runs-on: ubuntu-22.04
+  buildAndPush:
+    name: Build and Push the Image
+    runs-on: ubuntu-22.04
 
-      needs: [ buildAndTest ]
-      if: >
-        (github.ref == 'refs/heads/main' && github.event_name == 'push') ||
-        (github.event_name == 'pull_request' && github.event.pull_request.merged)
+    needs: [ buildAndTest ]
+    if: >
+      (github.ref == 'refs/heads/main' && github.event_name == 'push') ||
+      (github.event_name == 'pull_request' && github.event.pull_request.merged)
 
-      steps:
-        - name: Check out the current branch
-          uses: actions/checkout@v3
+    steps:
+      - name: Check out the current branch
+        uses: actions/checkout@v3
 
-        - name: Get the git version
-          run: echo "GIT_VERSION=$(git describe --tags --always)" >> $GITHUB_ENV
+      - name: Get the git version
+        run: echo "GIT_VERSION=$(git describe --tags --always)" >> $GITHUB_ENV
 
-        - name: Build with Gradle
-          run: |
-            docker run --network host \
-                     --rm --mount type=bind,source=$GITHUB_WORKSPACE,target=/usr/src/app \
-                     -w /usr/src/app node:${{ env.NODE_VERSION }} \
-                     bash -c "npm install && npm test && npm run build"
+      - name: Build with Gradle
+        run: |
+          docker run --network host \
+                   --rm --mount type=bind,source=$GITHUB_WORKSPACE,target=/usr/src/app \
+                   -w /usr/src/app node:${{ env.NODE_VERSION }} \
+                   bash -c "npm install && npm test && npm run build"
 
-        - name: Log in to Docker Hub
-          uses: docker/login-action@v2
-          with:
-            username: ${{ secrets.DOCKER_HUB_USERNAME }}
-            password: ${{ secrets.DOCKER_HUB_PASSWORD }}
+      - name: Log in to Docker Hub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKER_HUB_USERNAME }}
+          password: ${{ secrets.DOCKER_HUB_PASSWORD }}
 
-        - name: Build and push Docker image
-          uses: docker/build-push-action@v4
-          with:
-            context: .
-            file: docker/pipeline/Dockerfile
-            push: true
-            tags: |
-              ${{ env.DOCKER_HUB_USERNAME }}/${{ env.IMAGE_NAME }}:latest
-              ${{ env.DOCKER_HUB_USERNAME }}/${{ env.IMAGE_NAME }}:${{ env.GIT_VERSION }}
-              
-              
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v4
+        with:
+          context: .
+          file: docker/pipeline/Dockerfile
+          push: true
+          tags: |
+            ${{ env.DOCKER_HUB_USERNAME }}/${{ env.IMAGE_NAME }}:latest
+            ${{ env.DOCKER_HUB_USERNAME }}/${{ env.IMAGE_NAME }}:${{ env.GIT_VERSION }}
+                       
 
-    deploy:
-      name: Deploy the Latest Image
-      runs-on: ubuntu-22.04
+  deploy:
+    name: Deploy the Latest Image
+    runs-on: ubuntu-22.04
 
-      needs: [ buildAndPush ]
+    needs: [ buildAndPush ]
 
-      steps:
-        - name: Deploy to AWS Lightsail
-          run: |
-            echo "${{ env.AWS_SSH_PRIVATE_KEY }}" > my_key.pem
-            chmod 600 my_key.pem
-            ssh -o StrictHostKeyChecking=no -i my_key.pem ubuntu@${{ env.LIGHTSAIL_IP }} '
-              docker pull ${{ env.DOCKER_HUB_USERNAME }}/${{ env.IMAGE_NAME }}:latest &&
-              docker rm -f ${{ env.IMAGE_NAME }} || true &&
-              docker run -d --name ${{ env.IMAGE_NAME }} \
-#                         --mount type=bind,source=/home/ubuntu/app/application.properties,destination=/app/application.properties,readonly \
-#                         --mount type=bind,source=/home/ubuntu/app/data,destination=/app/vicroad_data_archives \
-#                         --mount type=bind,source=/home/ubuntu/.aws,destination=/root/.aws,readonly \
-#                         --mount type=bind,source=/home/ubuntu/app/logs,destination=/app/logs \
-                         ${{ env.DOCKER_HUB_USERNAME }}/${{ env.IMAGE_NAME }}:latest
-              docker image prune -a -f
+    steps:
+      - name: Deploy to AWS Lightsail
+        run: |
+          echo "${{ env.AWS_SSH_PRIVATE_KEY }}" > my_key.pem
+          chmod 600 my_key.pem
+          ssh -o StrictHostKeyChecking=no -i my_key.pem ubuntu@${{ env.LIGHTSAIL_IP }} '
+            docker pull ${{ env.DOCKER_HUB_USERNAME }}/${{ env.IMAGE_NAME }}:latest &&
+            docker rm -f ${{ env.IMAGE_NAME }} || true &&
+            docker run -d --name ${{ env.IMAGE_NAME }} \
+                       ${{ env.DOCKER_HUB_USERNAME }}/${{ env.IMAGE_NAME }}:latest
+            docker image prune -a -f
