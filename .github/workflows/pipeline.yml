@@ -116,7 +116,7 @@ jobs:
           push: true
           tags: |
             ${{ secrets.DOCKER_HUB_USERNAME }}/${{ env.IMAGE_NAME }}:latest
-            ${{ secrets.DOCKER_HUB_PASSWORD }}/${{ env.IMAGE_NAME }}:${{ env.GIT_VERSION }}
+            ${{ secrets.DOCKER_HUB_USERNAME }}/${{ env.IMAGE_NAME }}:${{ env.GIT_VERSION }}
                        
 
   deploy:
