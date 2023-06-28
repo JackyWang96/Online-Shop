@@ -4,19 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="427b0d9c-bd59-4bc9-8ede-914abe21b572" name="Changes" comment="created nested routes for shop">
+    <list default="true" id="427b0d9c-bd59-4bc9-8ede-914abe21b572" name="Changes" comment="fix layout and add new router">
+      <change afterPath="$PROJECT_DIR$/.babelrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eslintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/workflows/pipeline.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cypress.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cypress/integration/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styleMock.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/myFunction.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/setup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/category-item/category-item.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/category-item/category-item.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/category-item/category-item.styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/category-item/category-item.styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/category-preview/category-preview.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/category-preview/category-preview.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/directory/directory.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/directory/directory.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/product-card/product-card.styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/product-card/product-card.styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/categories-preview/categories-preview.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/categories-preview/categories-preview.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/category/category.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/category/category.component.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/home/home.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/home/home.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/button/button.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button/button.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/cart-dropdown/cart-dropdown.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart-dropdown/cart-dropdown.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/cart-item.component/cart-item.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart-item.component/cart-item.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/product-card/product-card.component.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/product-card/product-card.component.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/contexts/user.context.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/contexts/user.context.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,11 +80,12 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/zeyuwang/Desktop/JS notes/my-app/public&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/zeyuwang/Desktop/JS notes/my-app&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs.mocha.mocha_node_package_dir&quot;: &quot;/Users/zeyuwang/Desktop/JS notes/my-app/node_modules/mocha&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.web.browsers&quot;,
     &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
@@ -87,18 +94,153 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/src/assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cypress/intergration" />
       <recent name="$PROJECT_DIR$/src/routes" />
       <recent name="$PROJECT_DIR$/src/assets" />
       <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/components/category-item" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start">
+  <component name="RunManager" selected="Mocha.ProductCard.renders product details correctly">
+    <configuration name="Page Load -&gt; successfully loads (1)" type="CypressConfigurationType" factoryName="Cypress" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="passParentEnvs" value="true" />
+      <option name="programParameters" value="" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <option name="textRange" />
+      <option name="allNames">
+        <list>
+          <option value="Page Load" />
+          <option value="successfully loads" />
+        </list>
+      </option>
+      <option name="specsDir" />
+      <option name="specFile" value="$PROJECT_DIR$/cypress/integration/test.js" />
+      <option name="testName" value="successfully loads" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="additionalParams" value="" />
+      <option name="passParentEnvs" value="true" />
+      <option name="nodeJsRef" value="project" />
+      <option name="npmRef" value="Project" />
+      <option name="cypressPackageRef" />
+      <option name="kind" value="TEST" />
+      <option name="interactive" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Page Load -&gt; successfully loads" type="CypressConfigurationType" factoryName="Cypress" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="passParentEnvs" value="true" />
+      <option name="programParameters" value="" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <option name="textRange" />
+      <option name="allNames">
+        <list>
+          <option value="Page Load" />
+          <option value="successfully loads" />
+        </list>
+      </option>
+      <option name="specsDir" />
+      <option name="specFile" value="$PROJECT_DIR$/cypress/e2e/test.js" />
+      <option name="testName" value="successfully loads" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="additionalParams" value="" />
+      <option name="passParentEnvs" value="true" />
+      <option name="nodeJsRef" value="project" />
+      <option name="npmRef" value="Project" />
+      <option name="cypressPackageRef" />
+      <option name="kind" value="TEST" />
+      <option name="interactive" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ProductCard" type="CypressConfigurationType" factoryName="Cypress" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="passParentEnvs" value="true" />
+      <option name="programParameters" value="" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <option name="textRange" />
+      <option name="allNames">
+        <list>
+          <option value="ProductCard" />
+        </list>
+      </option>
+      <option name="specsDir" />
+      <option name="specFile" value="$PROJECT_DIR$/test/myFunction.js" />
+      <option name="testName" value="ProductCard" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="additionalParams" value="" />
+      <option name="passParentEnvs" value="true" />
+      <option name="nodeJsRef" value="project" />
+      <option name="npmRef" value="Project" />
+      <option name="cypressPackageRef" />
+      <option name="kind" value="TEST" />
+      <option name="interactive" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="src/contexts/user.context.jsx" type="CypressConfigurationType" factoryName="Cypress" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="passParentEnvs" value="true" />
+      <option name="programParameters" value="" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <option name="textRange" />
+      <option name="allNames" />
+      <option name="specsDir" />
+      <option name="specFile" value="$PROJECT_DIR$/src/contexts/user.context.jsx" />
+      <option name="testName" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="additionalParams" value="" />
+      <option name="passParentEnvs" value="true" />
+      <option name="nodeJsRef" value="project" />
+      <option name="npmRef" value="Project" />
+      <option name="cypressPackageRef" />
+      <option name="kind" value="SPEC" />
+      <option name="interactive" value="false" />
+      <method v="2" />
+    </configuration>
     <configuration name="src/routes/shop/shop.component.jsx" type="CypressConfigurationType" factoryName="Cypress" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <option name="allowRunningInParallel" value="false" />
       <option name="envs">
@@ -132,9 +274,6 @@
     <configuration name="OnilneShop" type="JavascriptDebugType" uri="http://localhost:3000/" useFirstLineBreakpoints="true">
       <method v="2" />
     </configuration>
-    <configuration name="localhost:3000" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:3000">
-      <method v="2" />
-    </configuration>
     <configuration name="Debug" type="NodeJSConfigurationType" path-to-js-file="test.jsx" working-dir="$PROJECT_DIR$/src/routes/test">
       <method v="2" />
     </configuration>
@@ -148,16 +287,40 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="ProductCard.renders product details correctly" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>TEST</test-kind>
+      <test-file>$PROJECT_DIR$/test/myFunction.js</test-file>
+      <test-names>
+        <name value="ProductCard" />
+        <name value="renders product details correctly" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Cypress.src/routes/shop/shop.component.jsx" />
+      <item itemvalue="Cypress.ProductCard" />
+      <item itemvalue="Cypress.Page Load -&gt; successfully loads (1)" />
+      <item itemvalue="Cypress.Page Load -&gt; successfully loads" />
+      <item itemvalue="Cypress.src/contexts/user.context.jsx" />
       <item itemvalue="JavaScript Debug.OnilneShop" />
-      <item itemvalue="JavaScript Debug.localhost:3000" />
+      <item itemvalue="Mocha.ProductCard.renders product details correctly" />
       <item itemvalue="Node.js.Debug" />
       <item itemvalue="npm.start" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.localhost:3000" />
+        <item itemvalue="Mocha.ProductCard.renders product details correctly" />
+        <item itemvalue="Cypress.ProductCard" />
+        <item itemvalue="Cypress.Page Load -&gt; successfully loads (1)" />
+        <item itemvalue="Cypress.Page Load -&gt; successfully loads" />
+        <item itemvalue="Cypress.src/contexts/user.context.jsx" />
       </list>
     </recent_temporary>
   </component>
@@ -185,7 +348,15 @@
       <workItem from="1685954999680" duration="253000" />
       <workItem from="1686011451160" duration="4189000" />
       <workItem from="1686294495058" duration="30461000" />
-      <workItem from="1687083624200" duration="6473000" />
+      <workItem from="1687083624200" duration="23976000" />
+      <workItem from="1687478685478" duration="1009000" />
+      <workItem from="1687563515536" duration="923000" />
+      <workItem from="1687691909905" duration="188000" />
+      <workItem from="1687765120499" duration="826000" />
+      <workItem from="1687854399788" duration="2379000" />
+      <workItem from="1687862903717" duration="749000" />
+      <workItem from="1687864372175" duration="7634000" />
+      <workItem from="1687915742203" duration="1603000" />
     </task>
     <task id="LOCAL-00001" summary="Create the new shopping website by react">
       <created>1682441192876</created>
@@ -229,7 +400,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686848889764</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fix layout and add new router">
+      <created>1687096493441</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1687096493441</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,17 +468,7 @@
     <MESSAGE value="Create checkout function" />
     <MESSAGE value="Create firestorm configuration" />
     <MESSAGE value="created nested routes for shop" />
-    <option name="LAST_COMMIT_MESSAGE" value="created nested routes for shop" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/App.js</url>
-          <line>14</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="fix layout and add new router" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix layout and add new router" />
   </component>
 </project>
