@@ -14,7 +14,7 @@ on:
 env:
   NODE_VERSION: '20.1.0'
   DOCKER_HUB_USERNAME: ${{ secrets.DOCKER_HUB_USERNAME }}
-  IMAGE_NAME: 'jackwang96/main'
+  IMAGE_NAME: 'main'
   AWS_SSH_PRIVATE_KEY: ${{ secrets.AWS_SSH_PRIVATE_KEY }}
   LIGHTSAIL_IP: ${{ secrets.LIGHTSAIL_IP }}
 
